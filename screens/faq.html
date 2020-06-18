@@ -13,7 +13,7 @@
         <div class="ui aligned center computer only grid container">
             <div class="ui four wide computer only center aligned" style="margin-bottom: 0px;">
                 <img src="../assets/images/receita-federal 1.png" alt="logo" height="120" width="180">
-                <h5 style="margin: 0px 0px 15px 0px; color: white;">Ministério da economia</h5>
+                <h5 style="margin: 0 0 15px 0; color: white;">Ministério da economia</h5>
             </div>
 
             <div class="ui right aligned twelve wide computer only column" style="margin-top: 1.6rem;">
@@ -91,18 +91,20 @@
 </header>
 
 <main style="margin: 2% auto">
-    <h2 style="font-size: 3rem;font-weight: bold; color: #0F4098; margin: 2% auto 2%; display: table;">
-        Perguntas Frequentes
-    </h2>
+    <div style="margin-top: 2rem; display: flex; justify-content: center;">
+        <h2 style="font-weight: bold; color: #0F4098;">
+            Perguntas Frequentes
+        </h2>
+    </div>
     <div class="ui container horizontal divider">
         Tópicos
     </div>
     <section class="ui container">
         <div>
-            <div class="ui three column  grid" style="padding: 2%">
+            <div class="ui three column stackable grid" style="padding: 2%">
 
                 <div class="row">
-                    <div class="ui column link list" style="text-align: left; max-width: 30%; margin: 0;">
+                    <div class="ui column link list" style="text-align: left; margin: 0;">
                         <div class="active item" style="color: #0F4098; font-size: 1.7rem;">CADASTROS</div>
                         <a class="item">O que é CPF?</a>
                         <a class="item">Todo cidadão é obrigado a ter cadastro no CPF?</a>
@@ -119,7 +121,7 @@
                         <a class="item">Ver todas a perguntas</a>
                     </div>
 
-                    <div class="ui column link list" style="text-align: left; max-width: 30%; margin: 0;">
+                    <div class="ui column link list" style="text-align: left; margin: 0;">
                         <div class="active item" style="color: #0F4098; font-size: 1.7rem;">SIMPLES NACIONAL</div>
                         <a class="item">Exclusão do Simples Nacional 2019 - Download</a>
                         <a class="item">Exclusão do Simples Nacional 2018 - Download</a>
@@ -131,7 +133,7 @@
                 <div class="ui container divider"></div>
 
                 <div class="row">
-                    <div class="ui column link list" style="text-align: left; max-width: 30%;">
+                    <div class="ui column link list" style="text-align: left;">
                         <div class="active item" style="color: #0F4098; font-size: 1.7rem;">DECLARAÇÕES E
                                                                                             DEMONSTRATIVOS
                         </div>
@@ -141,7 +143,7 @@
                         <a class="item">Ver todas a perguntas</a>
                     </div>
 
-                    <div class="ui column link list" style="text-align: left; margin-left: 2.375rem;">
+                    <div class="ui column link list" style="text-align: left;">
                         <div class="active item" style="color: #0F4098; font-size: 1.7rem;">TECNOLOGIA</div>
                         <a class="item">Receitanet</a>
                     </div>
@@ -151,7 +153,7 @@
     </section>
 </main>
 
-<footer style="margin-left: auto;margin-right: auto; text-align: center;">
+<footer style="position: relative; margin-left: auto;margin-right: auto;text-align: center;">
     <section style="background-color: #0F4098;">
         <div class="ui container">
             <div class="ui one column centered grid" style="color: #FFF; padding: 2%">
@@ -204,7 +206,7 @@
         </div>
     </section>
 
-    <section style="background-color: #FFF">
+    <section style="background-color: #FFF;">
         <div class="ui container">
             <div class="ui grid" style="background-color: #FFF;  text-align: left;">
                 <article class="row">
@@ -229,7 +231,10 @@
     $('#showBtn').show()
   })
   $('#showBtn').click(function () {
-    $('#secondary-menu').show()
+    $('#secondary-menu').animate({
+      height: "toggle"
+    }, 100, function () {
+    });
     $(this).hide()
     $('#hiddenBtn').show()
   })
