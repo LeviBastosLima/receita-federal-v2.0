@@ -11,11 +11,14 @@
 <header>
     <nav class="ui top main menu" style="background-color: #1659BF; padding-bottom: 15px;">
         <div class="ui aligned center computer only grid container">
-            <div class="ui four wide computer only center aligned" style="margin-bottom: 0px;">
-                <a href="file:///home/lebaliro/study/receita-federal-v2.0/screens/index.html">
-                    <img src="../assets/images/receita-federal 1.png" alt="logo" height="120" width="180">
-                </a>
-                <h5 style="margin: 0 0 15px 0; color: #FFF;">Ministério da economia</h5>
+            <div class="ui four wide computer only center aligned" style="margin-bottom: 0;">
+                <h1 id="tituloh1">
+                    <a href="index.html">
+                        <img src="../assets/images/receita-federal 1.png" alt="Receita Federal" height="120"
+                             width="180">
+                    </a>
+                </h1>
+                <h5 style="margin: 0 0 15px 0; color: #FFF; text-align: center;">Ministério da economia</h5>
             </div>
 
             <div class="ui right aligned twelve wide computer only column" style="margin-top: 1.6rem;">
@@ -49,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui mobile only grid container" style="margin-top: 0px;">
+        <div class="ui mobile only grid container" style="margin-top: 0;">
             <div class="four wide column">
                 <button class="ui primary button" style="color: #FFF;">
                     <img src="../assets/images/menu 1.png" alt="" width="20" height="20">
@@ -68,14 +71,14 @@
         <div class="sixteen wide column" style="background-color: #0F4098;" id="secondary-menu">
             <div class="ui container">
                 <div class="ui computer center aligned middle aligned grid">
-                    <a href="#" class="ui three wide column" style="color: #FFF">Perguntas Frequentes</a>
-                    <a href="#" class="one wide column" style="color: #FFF">Contato</a>
-                    <a href="file:///home/lebaliro/study/receita-federal-v2.0/screens/service.html"
-                        class="two wide column" style="color: #FFF">Serviços</a>
+                    <a href="index.html" class="two wide column" style="color: #FFF">Home</a>
+                    <a href="faq.html" class="ui three wide column" style="color: #FFF">Perguntas Frequentes</a>
+                    <a href="service.html"
+                       class="two wide column" style="color: #FFF">Serviços</a>
+                    <a href="news.html" class="two wide column" style="color: #FFF">Notícias</a>
                     <a href="#" class="two wide column" style="color: #FFF">Dados e Estudos</a>
                     <a href="#" class="two wide column" style="color: #FFF">Área de imprensa</a>
-                    <a href="#" class="two wide column" style="color: #FFF">Onde encontro</a>
-                    <a href="#" class="one wide column" style="color: #FFF">Avisos</a>
+                    <a href="#" class="two wide column" style="color: #FFF">Avisos</a>
                     <a href="#" class="one wide column">
                         <img src="../assets/images/moon 1.png" alt="moon" height="22" width="22">
                     </a>
@@ -92,10 +95,19 @@
         </div>
     </div>
 
-    <div style="background-image: url('../assets/images/FAQ 1.png'); background-size: cover; width: 100%; padding: 10rem 0;">
+    <div class="ui container" style="margin: 1% 0">
+        <div class="ui breadcrumb">
+            <a href="index.html" class="section">Home</a>
+            <i class="right angle icon divider"></i>
+            <p class="section">Perguntas Frequentes</p>
+        </div>
+    </div>
+
+
+    <div style="background-image: url('../assets/images/1_nNHoYMQDHnq9FmPKaR3Iug 1.png'); background-size: cover; width: 100%; padding: 10rem 0;">
         <div class=" ui container center aligned">
             <div style="width: 100%;">
-                <h2 style="color: #FFF;">Qual é sua dúvida?</h2>
+                <h2 style="color: #FFF;">O que você procura?</h2>
                 <div class="ui huge action input" style="box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);">
                     <input type="text" placeholder="Buscar no portal">
                     <button class="ui icon button">
@@ -105,7 +117,6 @@
             </div>
         </div>
     </div>
-
 </header>
 
 <main style="margin: 4% auto">
@@ -167,6 +178,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="ui grid right aligned">
+            <h3  class="column center computer only aligned">
+                <a href="#tituloh1">Topo da página<i class="hand point up icon"></i></a>
+            </h3>
         </div>
     </section>
 </main>
