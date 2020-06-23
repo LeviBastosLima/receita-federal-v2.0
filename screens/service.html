@@ -50,9 +50,24 @@
         </div>
         <div class="ui mobile only grid container" style="margin-top: 0;">
             <div class="four wide column">
-                <button class="ui primary button" style="color: #FFF;">
+                <button class="ui primary button" id="menu-button" style="color: #FFF;">
                     <img src="../assets/images/menu 1.png" alt="Menu" width="20" height="20">
                 </button>
+
+                <div class="ui vertical menu" id="menu-mobile" style="display: none;">
+                    <a href="index.html" class="item">
+                        Inicio
+                    </a>
+                    <a href="service.html" class="item">
+                        Serviços
+                    </a>
+                    <a href="news.html" class="item">
+                        Notícias
+                    </a>
+                    <a href="faq.html" class="item">
+                        FAQ 
+                    </a>
+                </div>
             </div>
             <div class="ui eight wide column center aligned">
                 <img src="../assets/images/receita-federal 2.png" alt="Logo da Receita">
@@ -102,7 +117,7 @@
     </div>
 
     <div id="busca"
-         style="background-image: url('../assets/images/1_nNHoYMQDHnq9FmPKaR3Iug 1.png'); background-size: cover; width: 100%; padding: 10rem 0;">
+         style="background-image: url('../assets/images/'); background-size: cover; width: 100%; padding: 10rem 0;">
         <div class=" ui container center aligned">
             <div style="width: 100%;">
                 <h2 style="color: #FFF;">Qual serviço você procura?</h2>
@@ -399,6 +414,9 @@
     $("#nav-rodape").css({"background-color":"#262626", "color":"#FFF"});
     $("#acesso-a-informacao").css({"background-color":"#000", "color":"#FFF"});
   })
+  $('#menu-button').click(function(){
+            $('#menu-mobile').toggle()
+        })
 </script>
 </body>
 
