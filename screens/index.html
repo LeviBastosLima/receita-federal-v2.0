@@ -44,7 +44,7 @@
                                                                                                          rodapé [4]</a>
                     </li>
                     <li class="center aligned three wide column">
-                        <a id="alto-contraste" href="#" accesskey="5" style="color: #FFF;">Alto contraste [5]</a>
+                        <a id="alto-contraste-active" contrast-deactive="false" href="#" accesskey="5" style="color: #FFF;">Alto contraste [5]</a>
                     </li>
                 </ul>
             </div>
@@ -508,7 +508,7 @@
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="../assets/css/dist/semantic.min.js"></script>
 <script>
-    $("#alto-contraste").click(function() {
+    $("#alto-contraste-active").click(function() {
       $("body").css({"background-color":"#000", "color":"#FFF"});
       $("h1, h2, h3, h4, h5, h6, p, i, a, div").css({"background-color":"#000", "color":"#FFF"});
       $("div.column").css({"background-color":"#000", "color":"#FFF", "border": "1px solid #FFF"});
@@ -520,6 +520,9 @@
       $("#rodape3").css({"background-color":"#262626", "color":"#FFF"});
       $("#nav-rodape").css({"background-color":"#262626", "color":"#FFF"});
       $("#acesso-a-informacao").css({"background-color":"#000", "color":"#FFF"});
+      if ($(this).attr('contrast-deactive') == 'true') location.reload()
+      else $(this).attr('contrast-deactive', 'true')
+      
     })
 </script>
 </body>
